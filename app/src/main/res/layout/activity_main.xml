@@ -256,7 +256,7 @@
 
                         <LinearLayout
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:orientation="vertical">
 
 
@@ -373,7 +373,7 @@
 
                                 <LinearLayout
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -422,7 +422,7 @@
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:orientation="horizontal">
 
                                 <androidx.appcompat.widget.AppCompatImageView
@@ -435,15 +435,15 @@
 
 
                                 <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
-                                        android:layout_width="wrap_content"
+                                        android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_marginStart="10dp"
-                                        android:layout_marginTop="35dp"
+                                        android:layout_marginTop="40dp"
                                         android:text="@string/restoran_terdekat"
 
                                         android:textSize="15sp"
@@ -486,12 +486,6 @@
 
                 </com.google.android.material.card.MaterialCardView>
 
-
-                <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
-                <!--                android:layout_width="match_parent"-->
-                <!--                android:layout_height="match_parent">-->
-
-                <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
 
 
                 <com.google.android.material.card.MaterialCardView
@@ -577,45 +571,6 @@
 
 
 
-
-<!--        <com.google.android.material.navigation.NavigationView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="40dp"-->
-<!--            android:backgroundTint="@color/green_tokped">-->
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:orientation="horizontal">-->
-
-<!--                <androidx.appcompat.widget.AppCompatImageView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:src="@drawable/ic_star_member"-->
-<!--                    />-->
-<!--                <androidx.appcompat.widget.AppCompatImageView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:src="@drawable/ic_star_member"/>-->
-
-<!--                <androidx.appcompat.widget.AppCompatImageView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:src="@drawable/ic_star_member"/>-->
-
-<!--                <androidx.appcompat.widget.AppCompatImageView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:src="@drawable/ic_star_member"/>-->
-
-<!--                <androidx.appcompat.widget.AppCompatImageView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:src="@drawable/ic_star_member"/>-->
-<!--            </LinearLayout>-->
-<!--        </com.google.android.material.navigation.NavigationView>-->
-
-
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_nav"
             android:layout_width="match_parent"
@@ -625,10 +580,6 @@
             app:itemTextColor="@color/grey"
             app:labelVisibilityMode="labeled"
             app:menu="@menu/btm_nav" />
-
-
-
-
 
 
     </RelativeLayout>
