@@ -34,7 +34,7 @@
                         android:layout_height="60dp"
                         android:layout_marginStart="28dp"
                         android:layout_marginTop="16dp"
-                        android:src="@drawable/ic_rec_logo"
+                        android:src="@drawable/ic_icon_goride"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="ContentDescription" />
@@ -45,7 +45,7 @@
                         android:layout_height="60dp"
                         android:layout_marginStart="36dp"
                         android:layout_marginTop="16dp"
-                        android:src="@drawable/ic_rec_logo"
+                        android:src="@drawable/ic_icon_gocar"
                         app:layout_constraintStart_toEndOf="@id/icon_goride"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="ContentDescription" />
@@ -56,7 +56,7 @@
                         android:layout_height="60dp"
                         android:layout_marginTop="16dp"
                         android:layout_marginEnd="36dp"
-                        android:src="@drawable/ic_rec_logo"
+                        android:src="@drawable/ic_icon_gofood"
                         app:layout_constraintEnd_toStartOf="@id/icon_gosend"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="ContentDescription" />
@@ -67,7 +67,7 @@
                         android:layout_height="60dp"
                         android:layout_marginTop="16dp"
                         android:layout_marginEnd="28dp"
-                        android:src="@drawable/ic_rec_logo"
+                        android:src="@drawable/ic_icon_gosend"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="ContentDescription" />
@@ -129,7 +129,7 @@
                         android:layout_height="60dp"
                         android:layout_marginStart="28dp"
                         android:layout_marginTop="16dp"
-                        android:src="@drawable/ic_rec_logo"
+                        android:src="@drawable/ic_icon_gomart"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/text_goride"
                         tools:ignore="ContentDescription" />
@@ -140,7 +140,7 @@
                         android:layout_height="60dp"
                         android:layout_marginStart="36dp"
                         android:layout_marginTop="16dp"
-                        android:src="@drawable/ic_rec_logo"
+                        android:src="@drawable/ic_icon_gopulsa"
                         app:layout_constraintStart_toEndOf="@id/icon_gomart"
                         app:layout_constraintTop_toBottomOf="@id/text_gocar"
                         tools:ignore="ContentDescription" />
@@ -151,7 +151,7 @@
                         android:layout_height="60dp"
                         android:layout_marginTop="16dp"
                         android:layout_marginEnd="38dp"
-                        android:src="@drawable/ic_rec_logo"
+                        android:src="@drawable/ic_icon_pedulilindungi_gojek"
                         app:layout_constraintEnd_toStartOf="@id/icon_others"
                         app:layout_constraintTop_toBottomOf="@id/text_gofood"
                         tools:ignore="ContentDescription" />
@@ -162,7 +162,7 @@
                         android:layout_height="50dp"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="34dp"
-                        android:src="@drawable/ic_rec_logo"
+                        android:src="@drawable/ic_icon_others"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/text_gosend"
                         tools:ignore="ContentDescription" />
@@ -220,6 +220,7 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
+
                 <!--            <androidx.recyclerview.widget.RecyclerView-->
 
                 <!--                android:layout_width="match_parent"-->
@@ -233,17 +234,17 @@
 
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="380dp"
-
+                    android:background="@color/grey"
                     android:layout_height="76dp"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="15dp"
-                    android:backgroundTint="@color/white"
                     app:cardCornerRadius="20dp">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:background="@drawable/gradient_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:orientation="horizontal">
 
                         <androidx.appcompat.widget.AppCompatImageView
@@ -256,12 +257,9 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="vertical">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="vertical">
+
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -310,8 +308,6 @@
                                     </LinearLayout>
                                 </LinearLayout>
 
-
-                            </LinearLayout>
 
                         </LinearLayout>
 
@@ -626,8 +622,7 @@
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
             app:itemIconSize="20dp"
-            app:itemIconTint="@color/black"
-            app:itemTextColor="@color/black"
+            app:itemTextColor="@color/grey"
             app:labelVisibilityMode="labeled"
             app:menu="@menu/btm_nav" />
 
