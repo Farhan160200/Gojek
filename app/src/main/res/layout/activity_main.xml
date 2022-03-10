@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/layout_nav_up" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_bawah_nav" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/icon_goride"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/ic_rec_logo"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/icon_gocar"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/ic_rec_logo"
+                        app:layout_constraintStart_toEndOf="@id/icon_goride"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/icon_gofood"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="36dp"
+                        android:src="@drawable/ic_rec_logo"
+                        app:layout_constraintEnd_toStartOf="@id/icon_gosend"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/icon_gosend"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="28dp"
+                        android:src="@drawable/ic_rec_logo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/text_goride"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/goride"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="@id/icon_goride"
+                        app:layout_constraintStart_toStartOf="@+id/icon_goride"
+                        app:layout_constraintTop_toBottomOf="@+id/icon_goride" />
+
+                    <TextView
+                        android:id="@+id/text_gocar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/gocar"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="@id/icon_gocar"
+                        app:layout_constraintStart_toStartOf="@+id/icon_gocar"
+                        app:layout_constraintTop_toBottomOf="@+id/icon_gocar" />
+
+                    <TextView
+                        android:id="@+id/text_gofood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/gofood"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="@id/icon_gofood"
+                        app:layout_constraintStart_toStartOf="@+id/icon_gofood"
+                        app:layout_constraintTop_toBottomOf="@+id/icon_gofood"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/text_gosend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/gosend"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="@id/icon_gosend"
+                        app:layout_constraintStart_toStartOf="@+id/icon_gosend"
+                        app:layout_constraintTop_toBottomOf="@+id/icon_gosend"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/icon_gomart"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/ic_rec_logo"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/text_goride"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/icon_gopulsa"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/ic_rec_logo"
+                        app:layout_constraintStart_toEndOf="@id/icon_gomart"
+                        app:layout_constraintTop_toBottomOf="@id/text_gocar"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/icon_pedulilindungi"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="38dp"
+                        android:src="@drawable/ic_rec_logo"
+                        app:layout_constraintEnd_toStartOf="@id/icon_others"
+                        app:layout_constraintTop_toBottomOf="@id/text_gofood"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/icon_others"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="34dp"
+                        android:src="@drawable/ic_rec_logo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/text_gosend"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/text_gomart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/gomart"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="@id/icon_gomart"
+                        app:layout_constraintStart_toStartOf="@+id/icon_gomart"
+                        app:layout_constraintTop_toBottomOf="@+id/icon_gomart" />
+
+                    <TextView
+                        android:id="@+id/text_gopulsa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/gopulsa"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="@id/icon_gopulsa"
+                        app:layout_constraintStart_toStartOf="@+id/icon_gopulsa"
+                        app:layout_constraintTop_toBottomOf="@+id/icon_gopulsa" />
+
+                    <TextView
+                        android:id="@+id/text_pedulilindungi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/checkin"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="@id/icon_pedulilindungi"
+                        app:layout_constraintStart_toStartOf="@+id/icon_pedulilindungi"
+                        app:layout_constraintTop_toBottomOf="@+id/icon_pedulilindungi" />
+
+                    <TextView
+                        android:id="@+id/text_others"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/lainnya"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="@id/icon_others"
+                        app:layout_constraintStart_toStartOf="@+id/icon_others"
+                        app:layout_constraintTop_toBottomOf="@+id/icon_pedulilindungi" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--            <androidx.recyclerview.widget.RecyclerView-->
+
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:orientation="vertical"-->
+                <!--                android:visibility="visible"-->
+                <!--                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"-->
+                <!--                app:spanCount="4"-->
+                <!--                tools:itemCount="8"-->
+                <!--                tools:listitem="@layout/layout_recycle" />-->
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="380dp"
+
+                    android:layout_height="76dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/ic_orang_star" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/xp_value"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <ProgressBar
+                                    android:progressTint="@color/green_tokped"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="254dp"
+                                    android:layout_height="7dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:backgroundTint="@color/grey"
+                                    android:progress="5" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:src="@drawable/ic_hourglass"
+                                        tools:ignore="TooDeepLayout" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:text="@string/harta_karung"
+                                            android:textStyle="bold"
+                                            tools:ignore="TooDeepLayout" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="25dp"
+                            android:src="@drawable/ic_right_arrow"
+                            android:tint="@color/grey" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/akses"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/card1"
+                        android:layout_width="413dp"
+                        android:layout_height="112dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="380dp"
+                            android:layout_height="76dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="5dp"
+                            android:backgroundTint="@color/white"
+                            android:outlineAmbientShadowColor="@color/grey"
+                            app:cardCornerRadius="20dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="12dp"
+                                    android:src="@drawable/ic_cross"
+                                    android:tint="@color/green_tokped" />
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginTop="20dp"
+                                        android:text="@string/voucher_nganggur"
+
+                                        android:textSize="15sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginStart="100dp"
+                                    android:layout_marginTop="25dp"
+                                    android:src="@drawable/ic_right_arrow"
+                                    android:tint="@color/grey" />
+
+
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/card1">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="380dp"
+                            android:layout_height="76dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="-30dp"
+                            android:layout_marginBottom="5dp"
+                            android:backgroundTint="@color/white"
+                            android:outlineAmbientShadowColor="@color/grey"
+                            app:cardCornerRadius="20dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="35dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:src="@drawable/ic_restaurant" />
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginTop="35dp"
+                                        android:text="@string/restoran_terdekat"
+
+                                        android:textSize="15sp"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginStart="160dp"
+                                    android:layout_marginTop="40dp"
+                                    android:src="@drawable/ic_right_arrow"
+                                    android:tint="@color/grey" />
+
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.google.android.material.card.MaterialCardView
+
+                    android:layout_width="380dp"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+
+                    android:outlineAmbientShadowColor="@color/grey"
+                    app:cardCornerRadius="20dp">
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cantikfest" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="match_parent">-->
+
+                <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+                <com.google.android.material.card.MaterialCardView
+
+                    android:layout_width="380dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="-17dp"
+                    android:backgroundTint="@color/white"
+
+                    android:outlineAmbientShadowColor="@color/grey"
+                    app:cardCornerRadius="0dp" />
+
+                <com.google.android.material.card.MaterialCardView
+
+                    android:layout_width="380dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="-25dp"
+                    android:layout_marginBottom="55dp"
+                    android:backgroundTint="@color/white"
+
+                    android:outlineAmbientShadowColor="@color/grey"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/festival_idaman"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="8dp"
+                                android:src="@drawable/ic_love_emoticon" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="350dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="@string/kilik_cashback" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginStart="-175dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/ic_left_hand_emoticon"
+                                android:tint="@color/yellow" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+<!--        <com.google.android.material.navigation.NavigationView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:backgroundTint="@color/green_tokped">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <androidx.appcompat.widget.AppCompatImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_star_member"-->
+<!--                    />-->
+<!--                <androidx.appcompat.widget.AppCompatImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_star_member"/>-->
+
+<!--                <androidx.appcompat.widget.AppCompatImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_star_member"/>-->
+
+<!--                <androidx.appcompat.widget.AppCompatImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_star_member"/>-->
+
+<!--                <androidx.appcompat.widget.AppCompatImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_star_member"/>-->
+<!--            </LinearLayout>-->
+<!--        </com.google.android.material.navigation.NavigationView>-->
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            app:itemIconSize="20dp"
+            app:itemIconTint="@color/black"
+            app:itemTextColor="@color/black"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/btm_nav" />
+
+
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>
