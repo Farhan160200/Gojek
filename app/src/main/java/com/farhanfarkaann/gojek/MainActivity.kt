@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    /// bentrok coba anananananananananananan
+    /// bentrok coba anananananananananananan nnnnnnn
     }
 
 }
